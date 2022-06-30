@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import './about.css'
-import ME from '../../assets/guillaume-galtier-3YrppYQPoCI-unsplash.jpg'
+import ME from '../../assets/Yuk Lin_Ng.jpg'
 import {MdWork} from 'react-icons/md'
 import {BiRun} from 'react-icons/bi'
 import {AiFillFile} from 'react-icons/ai'
@@ -10,8 +10,11 @@ import {AiFillFile} from 'react-icons/ai'
 function About() {
     return (
         <section id='about'>
+          
+          <div className="about__title">
             <h5>Get to know</h5>
             <h2>About me</h2>
+            </div>
 
             <div className="container about__container">
                 <div className="about__me">
@@ -31,13 +34,7 @@ function About() {
                         <article className='about__card'>
                             <BiRun className='about__icon' />
                             <h5>Where did I started?</h5>
-                          
-                        </article>
-
-                        <article className='about__card'>
-                            <AiFillFile className='about__icon' />
-                            <h5>Project</h5>
-                            <small>3 Months Working</small>
+                            <small>move UP GmbH Hamburg </small>
                         </article>
                     </div>
 
@@ -47,10 +44,11 @@ function About() {
                         I love hotpot I love hotpot I love hotpot I love hotpot
                     </p>
 
-                    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+                   {/*} <a href="#contact" className='btn btn-primary'>Let's Talk</a> */}
                 </div>
             </div>
         </section>
+       
     )
 }
 
