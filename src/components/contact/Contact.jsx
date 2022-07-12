@@ -14,7 +14,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_ud6d2g5', 'template_ndxihkl', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_ud6d2g5', 'template_ndxihkl', form.current, 'PNVFIGcZv0ah7qzE_')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -39,14 +39,7 @@ const Contact = () => {
                     <IoLogoWhatsapp className='contact__option-icon'/>
                     <h4>WhatsApp</h4>
                     <h5>+49 1511 2984 291</h5>
-                    <a href="https://api.whatsapp.com/send?phone=+4915112984291" target="blank">Send a message</a>
-                </article>
-
-                <article className="contact__option">
-                    <AiFillInstagram className='contact__option-icon'/>
-                    <h4>Instgram</h4>
-                    <h5>lin_fattypie</h5>
-                    <a href="https://www.instagram.com/lin_fattypie/">Send a message</a>
+                    <a href="https://api.whatsapp.com/send?phone=+4915112984291" target="blank" rel="noreferrer">Send a message</a>
                 </article>
             </div>
             <form ref={form} onSubmit={sendEmail}>
